@@ -136,7 +136,7 @@ export default function HeroExperience() {
       </AnimatePresence>
 
       {/* Hero principal */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+      <section className="relative min-h-screen flex items-center justify-center bg-black">
 
         {/* Fond : slideshow des photos */}
         {PHOTOS.map((src, i) => (

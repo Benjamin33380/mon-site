@@ -32,18 +32,18 @@ export default function AboutSection() {
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <h2 className="text-4xl sm:text-5xl font-medium uppercase tracking-[0.12em] text-gray-900 leading-tight mb-8">
-            ClimGO
+          <h2 className="text-4xl sm:text-5xl font-medium tracking-[0.12em] text-gray-900 leading-tight mb-8">
+            CLIMGO
           </h2>
         </FadeIn>
 
         <FadeIn delay={0.2}>
           <p className="text-lg text-gray-500 leading-relaxed max-w-2xl">
-            ClimGO est une entreprise artisanale spécialisée dans l&apos;installation,
-            l&apos;entretien et le dépannage de systèmes de climatisation, pompes à chaleur
-            et chauffage. Fondée par des professionnels passionnés, notre mission est
-            simple : vous garantir le confort toute l&apos;année, avec le sérieux et la
-            proximité d&apos;un artisan local.
+            CLIMGO est un artisan RGE indépendant basé sur le Bassin d&apos;Arcachon.
+            Spécialisés dans la climatisation, les pompes à chaleur et le chauffage,
+            nous intervenons chez vous avec réactivité et savoir-faire. Pas
+            d&apos;intermédiaire, pas de sous-traitance — juste un professionnel certifié
+            qui s&apos;engage sur chaque chantier.
           </p>
         </FadeIn>
 

@@ -107,11 +107,14 @@ export default function HeroExperience() {
                 Climatisation · Chauffage · PAC
               </p>
               <h1
-                className="text-5xl sm:text-7xl font-medium text-white uppercase tracking-[0.35em]"
-               
+                className="text-5xl sm:text-7xl font-medium text-white uppercase tracking-[0.35em] mr-[-0.35em]"
               >
                 ClimGO
               </h1>
+              <div
+                className="h-[3px] w-full mt-3 opacity-70 rounded-full"
+                style={{ background: "linear-gradient(to right, #002395 33%, #ffffff 33%, #ffffff 66%, #ED2939 66%)" }}
+              />
 
               {/* Bouton pulse */}
               <motion.div
@@ -197,6 +200,26 @@ export default function HeroExperience() {
 
         </div>
       </section>
+
+      {/* Indicateur de scroll */}
+      {entered && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2, duration: 1 }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        >
+          <span className="text-white/40 text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+          <motion.div
+            animate={{ y: [0, 6, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <svg className="w-4 h-4 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+            </svg>
+          </motion.div>
+        </motion.div>
+      )}
 
       {/* Bouton mute */}
       {entered && <MuteButton muted={muted} onToggle={toggleMute} />}

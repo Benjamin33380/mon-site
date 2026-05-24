@@ -94,6 +94,7 @@ export default function HeroExperience() {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="fixed inset-0 z-[100] bg-black flex flex-col items-center justify-center cursor-pointer isolate"
             onClick={handleEnter}
+            style={{ touchAction: "manipulation" }}
           >
             {/* Halo central supprimé */}
 
